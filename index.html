@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUSSURBVHgB7VrdceM2EF7Rfg9TwSEVRKnA8rvHsio4p4JzKohcQS4VJKlA/inglArOqcC8CsJ79tjOt/LiAkG7JEDKmUyCb0ZDCiCxHxb7B0hEBQUFBQUFBQUFBQUFBQX/O0zCL6vVqsblTL628unEYrFY054A+Q6XWYb8FvLvaAQOo++zg4ODo+C7CwhZmND+EMqv5TOzHn5+fubJf0cj0EueVwWkPgqZHQLz+XwUgQT5rJQPWh/kX0P+GY1A1fcATKzBxTKzT/TKYBfDRBuje5T5M3oVwACBT69FIAWTyaQxuj7SSCQpAAS+olciMAZPT0+jLTBJAaT4/74IpAALUBtdDY1EqgW8GoEUQNGafE6BvWm6D0kKMAg0+yCQAmMB9hJ/Ui3AKc0N/XPQUvAf1sOcujl94jNV+mbh90PqgVSHlElgdnh4eIRnZvg4NLVQ4t3j4+OlpNVkSHW4Ay0zSM3yCwXF083NDfk0ypaE+59xu/b9vQqgl2owlUANAj/i9gKC/HO+e4q+czxznFk+O60R499Hsp0UTE7h6tsaFE7LsC/FBVQLwGreRQRqrDoTuKAOiIJGI85AGPcnMpTlAc6LuK1XARjYygBbAbCqqvdYlSn1Y0Z5cEZ742+g/HP6exOnAtwutY1TigU4rTEcjAnAzN7Si1K6StdsQLFOad5KgX1WxZOPTd+jNwbg5TrwY9+2pUkmwG0wS/bvVmIB+6iavykPnSlQVt/JuFe0zfMzOF11xZxBQRAKaSMC5CfP93y9BsQqTPIpwBhv4jaemL+Houe4NPDv49wMw+h1AYPAlxSIwPcOZrqMiyJOe9p4IflEmBYgeX4m8hsagBQF1EpbIwQcu8jJyclv8TNYEcvUsyxA6ohY/mZsifytJj8VKTHAKW33QuCMtU95yNpBalWoT8GyTa9pBAbVAUEOnj88PPyuDqxH76wdpFWFkgRS3qbjM43L2xxUPQSc1u5TIJt/h+9ZO7gcF5h2ySepKbj87VBWJ/oswCltG+1LADJXEyvzrdKc5f9GEfZFfhCM3dAKsxpAwE+C64O19a4WPAdkAEeGfHBzkMF5fy3tF1DKGWWiUwFaaesnAQLTeD/Q9y7tIQN4+Ty+yL/2feIKjjIwxAUaufL5vTohbR/O6DjcJOP5N5Z8cTHeYofVX43gu8qJB1UugXAS1okQm6fWDrINZUBLgYH8zX5AgvA66J9KfZCEPgVofuz34aaW+SDE6MraB1g1iKxw2HcdPXZ+e3ubFBSzYwDy+OcoAu/AyACMhhIhk9RqEI4BW/JhWb9SpFz0Ly0lyJHZJmBWHQSsvX0jEbghG9q7uae4XfLr2BXlqGsLHUrgWLEZv8sCzCosiMA7EMWN3gZbBzHs85p8WMZ7TYahhNbHt6qDgFWFtWLiWQEwF12nSz4DUMQLl0tjrCUOR+99yYwd7Fu0fc331RACItDa7s6MV7JKVSOOtIH8nQU4PT1lK1iTjs2hKRTxzArB+H9yY9VB4IgGAL5lvVd3xBUNM6XNT9pUJlzj+5QjOfBc83Xn/wHh0bYhYIH+d9D2sfKuk6MwFXJs9gO9/KrUaM/0yGf3W7KVQf7CksM8MMEPxg86jAbvf8M3E5jEipQT1VCLYcTlHSDJCoiAK0+GV5grMSEap6X4vS5woG01+dGYDhf+k8SOskQJS+VYbs1W4hdgn39v+VdC6gnves3Qo7OCgoKCgoKCgoKCgv8W/gJ0q6YWwSht2AAAAABJRU5ErkJggg==" />    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List | by Abdulbarr</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loader">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="tema">
+      <select id="theme-select" onchange="changeTheme()">
+        <option value="dark-purple">Dark Purple</option>
+        <option value="dark">Dark Theme</option>
+        <option value="light">Light Theme</option>
+        <option value="dark-blue">Dark Blue</option>
+        <option value="blue-ocean">Blue Ocean</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <h1>To Do List</h1>
+
+      <div class="input-area">
+        <input id="todo-input" placeholder="Tambahkan tugas..." />
+        <input id="date-input" type="date" />
+        <button onclick="addTodo()">Add</button>
+      </div>
+
+      <div class="filters">
+        <button onclick="setFilter('all')">All</button>
+        <button onclick="setFilter('pending')">Pending</button>
+        <button onclick="setFilter('done')">Done</button>
+        <button onclick="clearTodos()">Clear All</button>
+      </div>
+
+      <div id="todo-list" class="todo-list"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
